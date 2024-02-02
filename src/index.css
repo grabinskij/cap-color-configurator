@@ -8,7 +8,7 @@
 
 .sketch-picker {
   width: 170px !important;
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: #7681be !important;
   box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
@@ -16,6 +16,15 @@
   border-radius: 6px !important;
 }
 
-.sketch-picker > div:nth-child(3) {
-  display: none !important;
+@media screen and (max-width: 1023px){
+  .sketch-picker {
+    width: 100px !important;
+    transform: rotate(90deg);
+
+  }
+
+  .sketch-picker > div:nth-child(3) {
+    display: none !important;
+  }
 }
+
