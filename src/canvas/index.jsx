@@ -4,8 +4,11 @@ import {Environment, Center} from "@react-three/drei";
 import CameraRig from './CameraRig';
 import Cap from "./Cap";
 
+
+
 const CanvasModel = () => {
     return (
+        <>
         <Canvas
             shadows
             camera={{position: [0, 0, 0], fov: 25}}
@@ -20,6 +23,7 @@ const CanvasModel = () => {
                 </Center>
             </CameraRig>
         </Canvas>
+        </>
     );
 }
 
