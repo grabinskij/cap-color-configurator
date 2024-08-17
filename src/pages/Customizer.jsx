@@ -4,14 +4,19 @@ import ColorPicker from "../components/ColorPicker";
 
 
 const Customizer = () => {
+
+    function showColorPicker () {
+
+    }
+
     return (
         <AnimatePresence>
             <div>
-            <motion.div
-                key="custom"
-                {...slideAnimation('top')}
-            >
-                <div className="
+                <motion.div
+                    key="custom"
+                    {...slideAnimation('top')}
+                >
+                    <div className="
                 absolute
                 z-10
                  lg:left-0 lg:ml-28 lg:mt-32 lg:-translate-y-1/2 lg:mt-40
@@ -20,12 +25,13 @@ const Customizer = () => {
                 left-1/2
                 top-0
                 -mt-8"
-                >
-                    <div>
-                        <ColorPicker />
+                    >
+                        <button onClick={showColorPicker}></button>
+                        <div>
+                            <ColorPicker/>
+                        </div>
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
             </div>
         </AnimatePresence>
     )
